@@ -217,10 +217,10 @@ que você gosta.</string>
                                 <color key="tintColor" name="redMain"/>
                                 <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </segmentedControl>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="mSa-pG-JV0">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="3jh-6C-pa0" userLabel="stackGeral">
                                 <rect key="frame" x="24" y="242.5" width="390" height="756.5"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="4Tl-LG-8w6" userLabel="stackMelhoresAvaliados">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="4Tl-LG-8w6" userLabel="stackMelhoresAvaliados">
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="232.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Melhores avaliados" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZE-OZ-NlM">
@@ -229,7 +229,7 @@ que você gosta.</string>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HOX-Qv-3yP">
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HOX-Qv-3yP">
                                                 <rect key="frame" x="0.0" y="42.5" width="390" height="190"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dji-Zt-Eb2">
@@ -239,7 +239,7 @@ que você gosta.</string>
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" reuseIdentifier="cell" id="ilC-7E-G90">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" reuseIdentifier="cellBest" id="ilC-7E-G90" customClass="BestEvaluatedCollectionViewCell" customModule="ChallengeParis" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="269" height="190"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="qYE-qn-8Gd">
@@ -332,25 +332,38 @@ que você gosta.</string>
                                                                 <constraint firstItem="uZ5-4a-Fr8" firstAttribute="top" secondItem="qYE-qn-8Gd" secondAttribute="top" id="za7-nu-6Oc"/>
                                                             </constraints>
                                                         </collectionViewCellContentView>
+                                                        <connections>
+                                                            <outlet property="btSaved" destination="drq-rc-d3M" id="tVX-w5-as0"/>
+                                                            <outlet property="ivBestPlace" destination="onV-Lg-BMc" id="ged-EM-tg2"/>
+                                                            <outlet property="lbDistance" destination="XXO-s8-pum" id="13v-pz-NO7"/>
+                                                            <outlet property="lbName" destination="eGz-Ca-ums" id="uYN-c6-IZh"/>
+                                                            <outlet property="lbPriceInfo" destination="BDZ-3i-MQL" id="QL1-Ys-RBX"/>
+                                                            <outlet property="lbRating" destination="wr1-bp-aUW" id="J59-yy-sTa"/>
+                                                        </connections>
                                                     </collectionViewCell>
                                                 </cells>
                                             </collectionView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="232.5" id="PvV-iV-SAq"/>
+                                            <constraint firstItem="KZE-OZ-NlM" firstAttribute="top" secondItem="4Tl-LG-8w6" secondAttribute="top" id="Tfl-9T-dNR"/>
+                                            <constraint firstItem="KZE-OZ-NlM" firstAttribute="leading" secondItem="4Tl-LG-8w6" secondAttribute="leading" id="X8R-M3-RoM"/>
+                                        </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="vhA-wH-NsP" userLabel="stackPertinho">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="vhA-wH-NsP" userLabel="stackPertinho">
                                         <rect key="frame" x="0.0" y="256.5" width="390" height="238"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="56" translatesAutoresizingMaskIntoConstraints="NO" id="beb-r9-vh1" userLabel="stackPertinho+verTodos">
-                                                <rect key="frame" x="0.0" y="0.0" width="318" height="32"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="390" height="32"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pertinho de você" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQU-EL-Gru">
-                                                        <rect key="frame" x="0.0" y="0.0" width="172" height="32"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pertinho de  você  " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQU-EL-Gru">
+                                                        <rect key="frame" x="0.0" y="0.0" width="186" height="32"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngf-yf-LOb">
-                                                        <rect key="frame" x="228" y="0.0" width="90" height="32"/>
+                                                        <rect key="frame" x="242" y="0.0" width="148" height="32"/>
                                                         <color key="tintColor" name="redMain"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Ver todos">
@@ -359,7 +372,7 @@ que você gosta.</string>
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="T7D-Ar-D5L">
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="T7D-Ar-D5L">
                                                 <rect key="frame" x="0.0" y="48" width="390" height="190"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="naL-W2-vmx">
@@ -369,7 +382,7 @@ que você gosta.</string>
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="exg-la-rPK">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellClose" id="exg-la-rPK" customClass="CloseToYouCollectionViewCell" customModule="ChallengeParis" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="180" height="190"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gpK-fz-gnO">
@@ -448,16 +461,26 @@ que você gosta.</string>
                                                                 <constraint firstItem="hDz-PP-9Go" firstAttribute="leading" secondItem="gpK-fz-gnO" secondAttribute="leading" id="r0g-e8-9Xp"/>
                                                             </constraints>
                                                         </collectionViewCellContentView>
+                                                        <connections>
+                                                            <outlet property="ivClose" destination="tKh-zd-Mcm" id="mvS-FP-s08"/>
+                                                            <outlet property="lbDistance" destination="p2Q-18-tsW" id="0Dr-Iu-3Yp"/>
+                                                            <outlet property="lbName" destination="yxQ-Eb-fat" id="gJt-BC-e5C"/>
+                                                            <outlet property="lbRating" destination="h9L-0V-ZNL" id="fTA-Y6-35i"/>
+                                                        </connections>
                                                     </collectionViewCell>
                                                 </cells>
                                             </collectionView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="beb-r9-vh1" secondAttribute="trailing" id="RYY-Xe-VDC"/>
+                                            <constraint firstAttribute="height" constant="238" id="Sb1-pT-BzH"/>
+                                        </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ni8-dx-YOu" userLabel="stackFamilia">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ni8-dx-YOu" userLabel="stackFamilia">
                                         <rect key="frame" x="0.0" y="518.5" width="390" height="238"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="4F5-Ue-kCD" userLabel="stackFamilia+verTodos">
-                                                <rect key="frame" x="0.0" y="0.0" width="334.5" height="32"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="390" height="32"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lugares para a família" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYY-xm-6iY">
                                                         <rect key="frame" x="0.0" y="0.0" width="223.5" height="32"/>
@@ -466,7 +489,7 @@ que você gosta.</string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KaM-Kw-2by">
-                                                        <rect key="frame" x="244.5" y="0.0" width="90" height="32"/>
+                                                        <rect key="frame" x="244.5" y="0.0" width="145.5" height="32"/>
                                                         <color key="tintColor" name="redMain"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Ver todos">
@@ -475,7 +498,7 @@ que você gosta.</string>
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YEw-b1-VwL">
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YEw-b1-VwL">
                                                 <rect key="frame" x="0.0" y="48" width="390" height="190"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="49U-Ss-hiy">
@@ -485,7 +508,7 @@ que você gosta.</string>
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="PLh-8p-Ozx">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellFamily" id="PLh-8p-Ozx" customClass="FamilyCollectionViewCell" customModule="ChallengeParis" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="180" height="190"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="PvW-Hy-xpY">
@@ -564,10 +587,20 @@ que você gosta.</string>
                                                                 <constraint firstAttribute="trailing" secondItem="Ue2-Xn-RdU" secondAttribute="trailing" id="zsU-lj-bfl"/>
                                                             </constraints>
                                                         </collectionViewCellContentView>
+                                                        <connections>
+                                                            <outlet property="ivFamily" destination="fAv-dn-tng" id="rvY-2R-hOg"/>
+                                                            <outlet property="lbDistance" destination="zCA-Pr-e3i" id="Pkz-1d-VmU"/>
+                                                            <outlet property="lbName" destination="K2e-hT-VwL" id="XKU-0A-SJ4"/>
+                                                            <outlet property="lbRating" destination="wOv-bQ-0ny" id="VOO-Xu-Z13"/>
+                                                        </connections>
                                                     </collectionViewCell>
                                                 </cells>
                                             </collectionView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="238" id="F3l-ZP-xNX"/>
+                                            <constraint firstAttribute="trailing" secondItem="4F5-Ue-kCD" secondAttribute="trailing" id="I8p-NL-vYT"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                             </stackView>
@@ -575,13 +608,13 @@ que você gosta.</string>
                         <viewLayoutGuide key="safeArea" id="mzb-Eb-b6y"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="mzb-Eb-b6y" firstAttribute="bottom" secondItem="3jh-6C-pa0" secondAttribute="bottom" constant="24" id="0Vg-9q-Gwb"/>
                             <constraint firstItem="mzb-Eb-b6y" firstAttribute="trailing" secondItem="07X-yH-ne2" secondAttribute="trailing" constant="20" id="252-aA-CzS"/>
-                            <constraint firstItem="mzb-Eb-b6y" firstAttribute="bottom" secondItem="mSa-pG-JV0" secondAttribute="bottom" constant="24" id="FHS-N5-nwx"/>
-                            <constraint firstItem="mSa-pG-JV0" firstAttribute="top" secondItem="07X-yH-ne2" secondAttribute="bottom" constant="24" id="HSh-OX-8lk"/>
-                            <constraint firstItem="mSa-pG-JV0" firstAttribute="leading" secondItem="mzb-Eb-b6y" secondAttribute="leading" constant="24" id="Hmy-V2-aBq"/>
-                            <constraint firstAttribute="trailing" secondItem="mSa-pG-JV0" secondAttribute="trailing" id="eId-BN-7x4"/>
+                            <constraint firstItem="3jh-6C-pa0" firstAttribute="leading" secondItem="mzb-Eb-b6y" secondAttribute="leading" constant="24" id="MLc-mN-scf"/>
+                            <constraint firstItem="3jh-6C-pa0" firstAttribute="top" secondItem="07X-yH-ne2" secondAttribute="bottom" constant="24" id="lMt-nU-dWL"/>
                             <constraint firstItem="07X-yH-ne2" firstAttribute="leading" secondItem="mzb-Eb-b6y" secondAttribute="leading" constant="20" id="oXK-p3-M2C"/>
                             <constraint firstItem="07X-yH-ne2" firstAttribute="top" secondItem="mzb-Eb-b6y" secondAttribute="top" constant="18" id="ssq-wA-hqg"/>
+                            <constraint firstAttribute="trailing" secondItem="3jh-6C-pa0" secondAttribute="trailing" id="xF5-4A-xUp"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Aonde vamos hoje?" id="aS8-d0-rQ5"/>
@@ -602,6 +635,7 @@ que você gosta.</string>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="qKo-VQ-j80" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CcU-ey-v2b">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" name="redMain"/>
@@ -685,13 +719,13 @@ que você gosta.</string>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <namedColor name="black75">
-            <color red="0.0" green="0.0" blue="0.0" alpha="0.75424254966887416" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.75400000810623169" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="halfBlackMain">
             <color red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="redMain">
-            <color red="0.83921568627450982" green="0.17254901960784313" blue="0.023529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.83899998664855957" green="0.17299999296665192" blue="0.024000000208616257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
