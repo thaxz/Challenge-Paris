@@ -42,7 +42,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
         
         if collectionView == bestEvaluatedCollectionView {
             
-            let cell = bestEvaluatedCollectionView.dequeueReusableCell(withReuseIdentifier: BestEvaluatedCollectionViewCell.cellIdentifier, for: indexPath) as! BestEvaluatedCollectionViewCell
+            let cell = bestEvaluatedCollectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! BestEvaluatedCollectionViewCell
             
             print("bestCell")
             
@@ -50,7 +50,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
             
         } else if collectionView == closeToYouCollectionView {
             
-            let cell = closeToYouCollectionView.dequeueReusableCell(withReuseIdentifier: "cellClose", for: indexPath) as! CloseToYouCollectionViewCell
+            let cell = closeToYouCollectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CloseToYouCollectionViewCell
             
             print("closeCell")
             
@@ -59,7 +59,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
             
         } else if collectionView == familyPlacesCollectionView {
             
-            let cell = familyPlacesCollectionView.dequeueReusableCell(withReuseIdentifier: "cellFamily", for: indexPath) as! FamilyCollectionViewCell
+            let cell = familyPlacesCollectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! FamilyCollectionViewCell
             
             cell.setup(name: "picole", rating: "0.0", distance: "6.6", image: UIImage())
             
