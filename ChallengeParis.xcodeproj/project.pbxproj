@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E91BB62228CAC7F40066970C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91BB62128CAC7F40066970C /* ProfileViewController.swift */; };
 		E9AF585B28C8FEC100ED3773 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AF585A28C8FEC100ED3773 /* AppDelegate.swift */; };
 		E9AF585D28C8FEC100ED3773 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AF585C28C8FEC100ED3773 /* SceneDelegate.swift */; };
 		E9AF585F28C8FEC100ED3773 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AF585E28C8FEC100ED3773 /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E91BB62128CAC7F40066970C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E9AF585728C8FEC100ED3773 /* ChallengeParis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeParis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9AF585A28C8FEC100ED3773 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9AF585C28C8FEC100ED3773 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				E9AF585E28C8FEC100ED3773 /* ViewController.swift */,
 				E9AF587C28C9506100ED3773 /* FamilyPlacesCollectionViewCell.swift */,
 				E9AF586E28C91D0E00ED3773 /* SearchUIViewController.swift */,
+				E91BB62128CAC7F40066970C /* ProfileViewController.swift */,
 				E9AF587028C91D2D00ED3773 /* SalvosViewController.swift */,
 			);
 			path = Controllers;
@@ -181,6 +184,7 @@
 				E9AF585B28C8FEC100ED3773 /* AppDelegate.swift in Sources */,
 				E9AF587128C91D2D00ED3773 /* SalvosViewController.swift in Sources */,
 				E9AF587D28C9506100ED3773 /* FamilyPlacesCollectionViewCell.swift in Sources */,
+				E91BB62228CAC7F40066970C /* ProfileViewController.swift in Sources */,
 				E9AF586F28C91D0E00ED3773 /* SearchUIViewController.swift in Sources */,
 				E9AF585D28C8FEC100ED3773 /* SceneDelegate.swift in Sources */,
 				E9AF587F28C9519700ED3773 /* FamilyCollectionViewCell.swift in Sources */,

@@ -60,8 +60,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
         } else if collectionView == familyPlacesCollectionView {
             
             let cell = familyPlacesCollectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! FamilyCollectionViewCell
-            
-            cell.setup(name: "picole", rating: "0.0", distance: "6.6", image: UIImage())
+
             
             print("familyCell")
             
