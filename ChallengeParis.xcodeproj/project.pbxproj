@@ -21,6 +21,7 @@
 		E9AF587B28C9503500ED3773 /* CloseToYouCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AF587A28C9503500ED3773 /* CloseToYouCollectionViewCell.swift */; };
 		E9AF587D28C9506100ED3773 /* FamilyPlacesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AF587C28C9506100ED3773 /* FamilyPlacesCollectionViewCell.swift */; };
 		E9AF587F28C9519700ED3773 /* FamilyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AF587E28C9519700ED3773 /* FamilyCollectionViewCell.swift */; };
+		E9E58CE928CCFD2C005BDAE8 /* RatingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E58CE828CCFD2C005BDAE8 /* RatingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		E9AF587A28C9503500ED3773 /* CloseToYouCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CloseToYouCollectionViewCell.swift; path = ChallengeParis/Models/CloseToYouCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 		E9AF587C28C9506100ED3773 /* FamilyPlacesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FamilyPlacesCollectionViewCell.swift; path = ChallengeParis/Models/FamilyPlacesCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 		E9AF587E28C9519700ED3773 /* FamilyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyCollectionViewCell.swift; sourceTree = "<group>"; };
+		E9E58CE828CCFD2C005BDAE8 /* RatingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				E9AF585C28C8FEC100ED3773 /* SceneDelegate.swift */,
 				E9AF587828C94F1C00ED3773 /* Controllers */,
 				E9AF586028C8FEC100ED3773 /* Main.storyboard */,
+				E9E58CE828CCFD2C005BDAE8 /* RatingsViewController.swift */,
 				E9AF587928C94F7000ED3773 /* Models */,
 				E9AF586328C8FEC200ED3773 /* Assets.xcassets */,
 				E9AF586528C8FEC200ED3773 /* LaunchScreen.storyboard */,
@@ -183,6 +186,7 @@
 				E9AF587B28C9503500ED3773 /* CloseToYouCollectionViewCell.swift in Sources */,
 				E9AF585B28C8FEC100ED3773 /* AppDelegate.swift in Sources */,
 				E9AF587128C91D2D00ED3773 /* SalvosViewController.swift in Sources */,
+				E9E58CE928CCFD2C005BDAE8 /* RatingsViewController.swift in Sources */,
 				E9AF587D28C9506100ED3773 /* FamilyPlacesCollectionViewCell.swift in Sources */,
 				E91BB62228CAC7F40066970C /* ProfileViewController.swift in Sources */,
 				E9AF586F28C91D0E00ED3773 /* SearchUIViewController.swift in Sources */,
